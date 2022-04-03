@@ -1,27 +1,30 @@
-# Instructions  
+## Time series
 
-  ** this file should contain student lesson instructions **
+### Introduction
 
-  _ students will see these instructions in a read-only workspace tab _
+A time series is a sequence of measurements from a system that varies in time.
 
-  ## Steps
-  1. 
-  2. 
-  3. 
+The example we will use is taken from a US researcher called Zachary M. Jones, who collected data from a web site called “Price of Weed” that crowdsources the price, quantity, quality, and location of cannabis transactions (http://www.priceofweed.com/). The goal of his project is to investigate the effect of policy decisions on markets.
 
-  Use [Markdown](https://gist.github.com/cuonggt/9b7d08a597b167299f0d) to format your instructions.
+The DataFrame has a row for each reported transaction and the following
+columns:
 
-  For example, here is a code block in python3
-```python
-def hello_world():
-  print("hello world!")
-```
+• city: string city name
 
+• state: two-letter state abbreviation.
 
-  Include an image by placing it in the `assets` folder.
+• price: price paid in dollars
 
-  For example, here is the Replit logo:
+• amount: quantity purchased in grams
 
-  ![alt text](assets/logo.png)
-  
-  
+• quality: high, medium, or low quality, as reported by the purchaser
+
+• date: date of report, presumed to be shortly after date of purchase
+
+• ppg: price per gram, in dollars
+
+• state.name: string state name
+
+• lat: approximate latitude of the transaction, based on city name
+
+• lon: approximate longitude of the transaction
