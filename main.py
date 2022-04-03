@@ -123,12 +123,12 @@ df_flights["Passengers_diff"] = df_flights["Passengers"].diff(periods=1)
 plt.plot(df_flights.Passengers)
 plt.plot(df_flights.Passengers_diff)
 # %%
-acf_values = acf(df_flights.dropna()['Passengers_diff'])
+acf_values = acf(df_flights.dropna()["Passengers_diff"])
 print(acf_values)
-plot_acf(df_flights.dropna().Passengers_diff, lags = 30)
+plot_acf(df_flights.dropna().Passengers_diff, lags=30)
 # %%
-pacf_values = pacf(df_flights.dropna()['Passengers_diff'])
+pacf_values = pacf(df_flights.dropna()["Passengers_diff"])
 print(pacf_values)
-plot_pacf(df_flights.dropna().Passengers_diff, lags = 30)
+plot_pacf(df_flights.dropna().Passengers_diff, lags=30)
 
 # %%
