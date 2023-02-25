@@ -58,7 +58,7 @@ columns:
 Next thing we should do it to transform each group into an equally spaced series by computing the mean daily price per gram. We also should transform the date into a continuous variable, for instance the years from the beginning of the series.
 
 ```python
-seconds_in_a_year = 356 * 24 * 60 * 60
+seconds_in_a_year = 365 * 24 * 60 * 60
 df_train = (
     df_raw.groupby(["quality", "date"], as_index=False)[["quality", "date", "ppg"]]
     .agg("mean")
